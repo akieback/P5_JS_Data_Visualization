@@ -1,0 +1,100 @@
+<!--
+    to run host this website please use VisualStudio Code and the p5.vscode extension. with that extension you can 
+    host the website on a local server.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Graduate Lab</title>
+</head>
+<body>
+    <div class="flex flex-col h-screen justify-between">
+    <nav class="bg-gray-100 h-15">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between"> <!--flex= all nect to each other-->
+                <div class="flex space-x-4">
+                    <div>
+                        <a href="Main.html" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1 text-blue-400">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                            </svg>
+                            <span class="font-bold">Graduate</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex flex items-right space-x-1">
+                    <a href="Vis.html" class="py-5 px-2 text-gray-700 hover:text-gray-900">Visualization</a>
+                    <a href="Data.html" class="py-5 px-2 text-gray-700 hover:text-gray-900">Data</a>
+                </div> 
+                    <!--mobile button-->
+                <div class="md:hidden flex items-cemter">
+                    <button class="mobile-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg> 
+                    </button>  
+                </div>
+            </div>
+
+        </div>
+        <!--mobile menu-->
+        <div class="mobile-menu hidden">
+            <a href="Vis.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Visualization</a>    
+            <a href="Data.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Data</a>
+        </div>
+    </nav>
+
+    <section class="text-gray-600 body-font mb-auto">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">GEOG 581
+              <br class="hidden lg:inline-block">Adrian Kieback
+            </h1>
+            <h2 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                Graduate Project 
+            </h2>
+            <p class="mb-8 leading-relaxed">This is my Graduate Project for the course GEOG 581-Data Visualization. The main goal in this project is to create a
+                visually appealing webiste. Since we never covered the design of websites in our course, the goal of this project is to learn how to use HTML, CSS and JavaScript in combination.
+            </p>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded-lg drop-shadow-lg" alt="SDSU Campus" src="data/sdsu_campus.jpeg">
+          </div>
+        </div>
+    </section>
+
+
+    <!-- inspiration from https://tailblocks.cc/  @knyttneve-->
+    <footer class="text-gray-600 body-font h-15">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a href="Main.html" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1 text-blue-400">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+            </svg>
+            <span class="font-bold">Graduate</span>
+        </a>
+        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 Kieback
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a href="https://www.xing.com/profile/Adrian_Kieback2/cv" target="_blank" rel="noopener noreferrer" class="ml-3 text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.085 15l2.744-4.825-1.846-3.162h3.292l1.83 3.152-2.744 4.835h-3.276zm8.79-1.445l3.514 6.445h-3.252l-3.55-6.445 5.38-9.555h3.289l-5.381 9.555z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/adrian-kieback-088869173/" target="_blank" rel="noopener noreferrer" class="ml-3 text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        </span>
+    </div>
+    </footer>
+
+    <script src="navbar.js"></script>
+    </div>
+</body>
+</html>
